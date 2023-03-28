@@ -7,7 +7,7 @@ pandas==1.5.3
 -e git+https://github.com/bheinzerling/pyrouge@08e9cc35d713f718a05b02bf3bb2e29947d436ce#egg=pyrouge
 pytorch-transformers==1.2.0
 scipy==1.10.1
-sentence-transformers==2.1.0
+sentence-transformers==2.2.2
 
 six==1.16.0
 sklearn==0.0
