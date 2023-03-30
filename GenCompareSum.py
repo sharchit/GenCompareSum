@@ -6,7 +6,7 @@ import nltk
 import torch
 import pandas as pd
 from tqdm import tqdm
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from transformers import BartTokenizer, BartForConditionalGeneration
 import bert_score
 import functools
 
@@ -449,8 +449,8 @@ def _block_n_gram(n, c, p,salient_texts=False):
 
 def get_T5_model(model,device):
 
-    tokenizer_T5 = T5Tokenizer.from_pretrained(model)
-    model_T5 = T5ForConditionalGeneration.from_pretrained(model)
+    tokenizer_T5 = BartTokenizer.from_pretrained(model)
+    model_T5 = BartForConditionalGeneration.from_pretrained(model)
     output = model_T5.to(device)
     return model_T5, tokenizer_T5
 
